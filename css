@@ -1,0 +1,82 @@
+@media only screen and (min-width: 768px) {
+
+#innermain, #ulDiv, #pietab3{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+}
+
+input{
+    border : 2px solid lightblue;
+}
+input:focus{
+        outline-color: lightblue;
+
+}
+button:focus{
+    outline-color: #BDBDBD;
+}
+#pie, #home, #listBtn{
+    border-width: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+#pie{
+  background-image:url("https://drive.google.com/uc?id=1PuSbeV8kWWRhDbdT4mih3N8xfeva-1Zs");
+}
+  #home{
+ 
+    background-image: url("https://drive.google.com/uc?id=19CQu_fW9iIZ0u7U_mhO6qyi_gP3Rf7QP");
+ 
+}
+#listBtn{
+ 
+    background-image: url("https://drive.google.com/uc?id=14nJ3GDK1fgiEvAZCOCNRwaZITHANub3n");}
+
+li{
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+overflow-x: scroll;
+overflow-y: hidden;
+}
+.costspan{
+    margin-right: 10px;
+}
+li:nth-child(odd) {
+    border-left:5px solid orange;
+}
+li:nth-child(even) {
+
+    border-left:5px solid lightgreen;
+}
+#ulDiv, #innermain, #pietab2{
+            right:0.01px;
+            bottom:20%;
+            top:10%;
+            left: 0.01px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            white-space: nowrap; 
+            position: absolute;
+}
+#innermain{
+       
+            top:15%;
+}
+#pietab2{
+      
+            height:50%;
+            text-align:center;
+             margin-right: 10px;
+             margin-left: 10px; 
+            background-color: white;
+}
+#myChart{
+    min-height: 100%;min-width: 100%
+}
