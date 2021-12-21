@@ -1,0 +1,66 @@
+<div id="main">
+           <div><h1 style="text-align:center;">Expense Manager</h1></div>
+      <div id="innermain">   
+       <div class="w3-card-2 w3-panel" style="text-align:center;margin-left: 10px;margin-right: 10px;background-color: white">
+              <h3 >Total Balance</h3>
+            
+                   <input  type="number" id="totalBalanceInput" style="width: 70%;" placeholder="$"></input>
+
+            <button onclick="TotalBalance()" class="w3-button w3-blue w3-round-large" style="margin-left: 10px;"> Add </button>            
+                  <hr />
+            </div> 
+
+            <div class="w3-card-2 w3-panel" style="text-align:center;margin-left: 10px;margin-right: 10px;background-color: white">
+              <h3 style="">Add Expense </h3>
+            
+                   <input  id="expenseName" style="width: 50%;" placeholder="name"></input>
+                   <input type="number"  id="expenseCost" style="width: 20%" placeholder="$"></input>  
+
+            <button onclick="addExpense()" class="w3-button w3-blue w3-round-large" style="margin-left: 10px;"> Add </button>
+                  <hr />
+            </div> 
+          <div class="w3-card-2 w3-panel" style="text-align:center;margin-left: 10px;margin-right: 10px;background-color: white">
+              <h3 style="">Current Balance </h3>
+            
+               <p id="currentBalance"></p>               
+
+               <hr />
+            </div> 
+        </div>
+</div>
+
+
+
+<div id="listtab" class="tabcontent">
+        <div style="text-align:center"><h2>My Expenses</h2></div>
+        <div id="ulDiv"  class="w3-panel" >
+
+             <ul class="w3-ul" id="myUL" >
+               <!--  <li id="list" class=" w3-card w3-panel ">Transport<span onclick="this.parentElement.style.display='none'"  class="w3-button w3-tiny w3-right">X</span><span class="w3-right costspan">$560</span></li>  -->   
+
+              </ul>
+        </div>
+</div>
+
+
+
+<div id="pietab" class="tabcontent">
+ <div style="text-align:center"><h2>Expense Chart</h2></div>
+ 
+ <div id="pietab3">
+  <div id="pietab2" class="w3-card w3-panel"> 
+    <canvas id="myChart"></canvas>
+
+  </div>
+  </div>
+</div>
+
+
+
+<div id="bottomDiv" class="w3-row " style="z-index: -1;background-color:#BDBDBD; bottom: 0px;position: absolute;right: 0;left: 0">
+          <div class="w3-panel w3-col s4 w3-center"><button onclick="openHomeTab(event)" id="home"> </button></div>
+          <div class="w3-panel w3-col s4 w3-center"><button onclick="openListTab(event)" id="listBtn"> </button></div>
+          <div class="w3-panel w3-col s4 w3-center"><button onclick="openPieTab(event)" id="pie"></button></div>
+</div>
+
+
